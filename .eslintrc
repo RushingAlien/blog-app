@@ -1,0 +1,7 @@
+{
+  "plugins": ["security"],
+  "rules": {
+    "security/detect-eval-with-expression": "warn",
+    "security/detect-unsafe-regex": "error"
+  }
+}

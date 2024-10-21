@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Posts</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>All Posts</h1>
+    <a href="/new">Create New Post</a>
+    <ul>
+        <% posts.forEach(function(post) { %>
+            <li>
+                <strong><%= post.title %></strong>
+                <!-- Render the parsed HTML content using <%- to allow HTML rendering -->
+                <div><%- post.content %></div>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
